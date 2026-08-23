@@ -1,0 +1,62 @@
+{
+  "model": "static-fixture-moderation",
+  "flaggedKeywords": [
+    "hurt",
+    "kill",
+    "attack",
+    "murder",
+    "bomb",
+    "threat",
+    "weapon",
+    "suicide",
+    "harass"
+  ],
+  "flagged": {
+    "flagged": true,
+    "categories": {
+      "violence": true,
+      "harassment": false,
+      "hate": false,
+      "self-harm": false,
+      "sexual": false
+    },
+    "category_scores": {
+      "violence": 0.91,
+      "harassment": 0.12,
+      "hate": 0.03,
+      "self-harm": 0.02,
+      "sexual": 0.01
+    },
+    "category_applied_input_types": {
+      "violence": ["text"],
+      "harassment": ["text"],
+      "hate": ["text"],
+      "self-harm": ["text"],
+      "sexual": ["text"]
+    }
+  },
+  "clean": {
+    "flagged": false,
+    "categories": {
+      "violence": false,
+      "harassment": false,
+      "hate": false,
+      "self-harm": false,
+      "sexual": false
+    },
+    "category_scores": {
+      "violence": 0.01,
+      "harassment": 0.01,
+      "hate": 0.01,
+      "self-harm": 0.0,
+      "sexual": 0.0
+    },
+    "category_applied_input_types": {
+      "violence": ["text"],
+      "harassment": ["text"],
+      "hate": ["text"],
+      "self-harm": ["text"],
+      "sexual": ["text"]
+    }
+  }
+}

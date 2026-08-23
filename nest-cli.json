@@ -3,6 +3,10 @@
   "collection": "@nestjs/schematics",
   "sourceRoot": "src",
   "compilerOptions": {
-    "deleteOutDir": true
+    "deleteOutDir": true,
+    "assets": [
+      { "include": "modules/rag/seed-data/**/*", "outDir": "dist/src", "watchAssets": true },
+      { "include": "modules/openai/fixtures/**/*", "outDir": "dist/src", "watchAssets": true }
+    ]
   }
 }

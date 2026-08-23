@@ -58,12 +58,258 @@ model AuditLog {
 }
 
 model EmbeddingCache {
-  id        String   @id @default(cuid())
-  textHash  String   @unique
-  embedding Json
-  model     String
-  createdAt DateTime @default(now())
+  id         BigInt   @id @default(autoincrement())
+  publicId   String   @unique @default(uuid())
+  textHash   String   @unique
+  embedding  Json
+  model      String
+  tokenCount Int?
+  createdAt  DateTime @default(now())
 
   @@index([model])
   @@map("embedding_cache")
+}
+
+model AiAuditLog {
+  id                BigInt   @id @default(autoincrement())
+  publicId          String   @unique @default(uuid())
+  requestId         String
+  userId            String?
+  model             String
+  endpoint          String
+  systemPrompt      String?
+  userMessage       String
+  assistantResponse String?
+  inputTokens       Int
+  outputTokens      Int
+  totalTokens       Int
+  estimatedCost     Float
+  latencyMs         Int
+  temperature       Float?
+  maxTokens         Int?
+  status            String
+  errorCode         String?
+  errorMessage      String?
+  retryCount        Int      @default(0)
+  metadata          Json?    @db.JsonB
+  createdAt         DateTime @default(now())
+
+  @@index([userId, createdAt(sort: Desc)])
+  @@index([model, createdAt(sort: Desc)])
+  @@index([status])
+  @@map("ai_audit_logs")
+}
+
+model AiProvider {
+  id          BigInt    @id @default(autoincrement())
+  publicId    String    @unique @default(uuid())
+  name        String    @unique
+  slug        String    @unique
+  baseUrl     String?
+  description String?
+  isActive    Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  models      AiModel[]
+
+  @@map("ai_providers")
+}
+
+model AiModel {
+  id               BigInt    @id @default(autoincrement())
+  publicId         String    @unique @default(uuid())
+  providerId       BigInt
+  name             String
+  modelId          String    @unique
+  tier             String
+  inputPricePer1M  Float     @default(0)
+  outputPricePer1M Float     @default(0)
+  contextWindow    Int?
+  description      String?
+  source           String    @default("manual")
+  isActive         Boolean   @default(true)
+  lastSyncedAt     DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  provider AiProvider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+
+  @@index([providerId])
+  @@index([tier])
+  @@index([source])
+  @@map("ai_models")
+}
+
+model PromptTemplate {
+  id                     BigInt   @id @default(autoincrement())
+  publicId               String   @unique @default(uuid())
+  name                   String   @unique
+  description            String?
+  systemPrompt           String
+  fewShotExamples        Json?    @db.JsonB
+  technique              String
+  recommendedModel       String   @default("gpt-4o")
+  recommendedTemperature Float    @default(0.7)
+  tags                   String[]
+  isActive               Boolean  @default(true)
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
+
+  @@map("prompt_templates")
+}
+
+model ChatConversation {
+  id           BigInt        @id @default(autoincrement())
+  publicId     String        @unique @default(uuid())
+  title        String?
+  systemPrompt String?
+  model        String
+  userId       String?
+  toolsEnabled Boolean       @default(false)
+  metadata     Json?         @db.JsonB
+  isArchived   Boolean       @default(false)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  messages     ChatMessage[]
+
+  @@index([userId, updatedAt(sort: Desc)])
+  @@map("chat_conversations")
+}
+
+model ChatMessage {
+  id             BigInt   @id @default(autoincrement())
+  publicId       String   @unique @default(uuid())
+  conversationId BigInt
+  role           String
+  content        String?
+  toolCalls      Json?    @db.JsonB
+  toolCallId     String?
+  toolName       String?
+  tokenCount     Int?
+  cost           Float?
+  latencyMs      Int?
+  model          String?
+  metadata       Json?    @db.JsonB
+  createdAt      DateTime @default(now())
+
+  conversation ChatConversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@index([conversationId, createdAt(sort: Asc)])
+  @@map("chat_messages")
+}
+
+model ChatTool {
+  id            BigInt   @id @default(autoincrement())
+  publicId      String   @unique @default(uuid())
+  name          String   @unique
+  displayName   String
+  description   String
+  parameters    Json     @db.JsonB
+  handlerType   String
+  handlerConfig Json?    @db.JsonB
+  isActive      Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@map("chat_tools")
+}
+
+model Document {
+  id               BigInt          @id @default(autoincrement())
+  publicId         String          @unique @default(uuid())
+  title            String
+  description      String?
+  sourceType       String
+  originalFilename String?
+  fileSize         Int?
+  totalChunks      Int             @default(0)
+  totalTokens      Int             @default(0)
+  embeddingModel   String
+  embeddingStatus  String
+  category         String?
+  tags             String[]
+  metadata         Json?           @db.JsonB
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+  chunks           DocumentChunk[]
+  qaPairs          QaPair[]
+
+  @@index([category])
+  @@index([embeddingStatus])
+  @@map("documents")
+}
+
+model DocumentChunk {
+  id              BigInt   @id @default(autoincrement())
+  publicId        String   @unique @default(uuid())
+  documentId      BigInt
+  chunkIndex      Int
+  content         String
+  tokenCount      Int
+  startChar       Int
+  endChar         Int
+  pineconeId      String?
+  embeddingStatus String
+  metadata        Json?    @db.JsonB
+  createdAt       DateTime @default(now())
+
+  document Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@index([documentId, chunkIndex])
+  @@map("document_chunks")
+}
+
+model QaPair {
+  id               BigInt   @id @default(autoincrement())
+  publicId         String   @unique @default(uuid())
+  question         String
+  expectedAnswer   String
+  sourceDocumentId BigInt
+  complexity       String
+  createdAt        DateTime @default(now())
+
+  sourceDocument Document @relation(fields: [sourceDocumentId], references: [id], onDelete: Cascade)
+
+  @@index([sourceDocumentId])
+  @@index([complexity])
+  @@map("qa_pairs")
+}
+
+model ModerationLog {
+  id             BigInt   @id @default(autoincrement())
+  publicId       String   @unique @default(uuid())
+  requestId      String?
+  userId         String?
+  direction      String
+  content        String
+  isFlagged      Boolean
+  categories     Json     @db.JsonB
+  categoryScores Json     @db.JsonB
+  action         String
+  source         String
+  metadata       Json?    @db.JsonB
+  createdAt      DateTime @default(now())
+
+  // NOTE: the isFlagged index is declared plain here, but the migration replaces it with a
+  // PARTIAL index (WHERE "isFlagged" = true) — Prisma's schema DSL cannot express partial
+  // indexes. Same divergence as ai_audit_logs' status partial index (see migration
+  // 20260625055424_fix_status_partial_index).
+  @@index([userId, createdAt(sort: Desc)])
+  @@index([isFlagged])
+  @@map("moderation_logs")
+}
+
+model UserCostBudget {
+  id              BigInt   @id @default(autoincrement())
+  publicId        String   @unique @default(uuid())
+  userId          String   @unique
+  dailyLimitUsd   Float?
+  monthlyLimitUsd Float?
+  isActive        Boolean  @default(true)
+  alertThreshold  Float    @default(0.8)
+  metadata        Json?    @db.JsonB
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("user_cost_budgets")
 }

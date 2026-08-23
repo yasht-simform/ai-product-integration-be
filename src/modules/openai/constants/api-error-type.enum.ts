@@ -1,0 +1,6 @@
+export enum ApiErrorType {
+  RETRYABLE = 'RETRYABLE',
+  PERMANENT = 'PERMANENT',
+  CIRCUIT_OPEN = 'CIRCUIT_OPEN',
+  TIMEOUT = 'TIMEOUT',
+}

@@ -83,4 +83,14 @@ export default tseslint.config(
       'no-console': 'warn',
     },
   },
+
+  // ── Test file overrides ─────────────────────────────────────────────────────
+  {
+    files: ['**/*.spec.ts', '**/*.e2e-spec.ts', 'test/**/*.ts'],
+    rules: {
+      // jest-mock-extended mock methods are jest.fn() instances — they don't
+      // use `this`, so the unbound-method check is a false positive in tests.
+      '@typescript-eslint/unbound-method': 'off',
+    },
+  },
 );
