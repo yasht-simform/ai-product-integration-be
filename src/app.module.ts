@@ -1,6 +1,7 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { APP_FILTER, APP_GUARD, APP_INTERCEPTOR } from '@nestjs/core';
+import { ScheduleModule } from '@nestjs/schedule';
 import { ThrottlerModule } from '@nestjs/throttler';
 
 import { AppController } from './app.controller';
@@ -12,22 +13,45 @@ import { LoggerModule } from './common/logger/logger.module';
 import { RequestLoggerMiddleware } from './common/middleware/request-logger.middleware';
 import {
   appConfig,
+  chatConfig,
+  costBudgetConfig,
   databaseConfig,
   jwtConfig,
+  moderationConfig,
   openaiConfig,
   pineconeConfig,
+  ragConfig,
+  retentionConfig,
   throttleConfig,
   validate,
 } from './config';
 import { DatabaseModule } from './database/database.module';
+import { AiChatModule } from './modules/ai-chat/ai-chat.module';
+import { CapstoneModule } from './modules/capstone/capstone.module';
+import { CostManagementModule } from './modules/cost-management/cost-management.module';
 import { HealthModule } from './modules/health/health.module';
+import { ModerationModule } from './modules/moderation/moderation.module';
+import { OpenaiModule } from './modules/openai/openai.module';
+import { RagModule } from './modules/rag/rag.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
       validate,
-      load: [appConfig, databaseConfig, jwtConfig, openaiConfig, pineconeConfig, throttleConfig],
+      load: [
+        appConfig,
+        databaseConfig,
+        jwtConfig,
+        openaiConfig,
+        pineconeConfig,
+        throttleConfig,
+        chatConfig,
+        ragConfig,
+        moderationConfig,
+        costBudgetConfig,
+        retentionConfig,
+      ],
     }),
     // @nestjs/throttler v6 uses milliseconds for ttl.
     // THROTTLE_TTL env var is stored in seconds, so multiply by 1000 here.
@@ -43,9 +67,16 @@ import { HealthModule } from './modules/health/health.module';
         ],
       }),
     }),
+    ScheduleModule.forRoot(),
     LoggerModule,
     DatabaseModule,
     HealthModule,
+    OpenaiModule,
+    AiChatModule,
+    RagModule,
+    ModerationModule,
+    CostManagementModule,
+    CapstoneModule,
   ],
   controllers: [AppController],
   providers: [

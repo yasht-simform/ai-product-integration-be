@@ -1,0 +1,34 @@
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+
+import { BudgetStatus } from '../constants/budget-status.constant';
+
+export class BudgetStatusResDto {
+  @ApiProperty()
+  userId: string;
+
+  @ApiProperty({ description: 'Spend since UTC midnight (USD)' })
+  dailySpend: number;
+
+  @ApiProperty({ description: 'Spend since the UTC first of the month (USD)' })
+  monthlySpend: number;
+
+  @ApiPropertyOptional({ description: 'Configured daily limit (USD); absent means unlimited' })
+  dailyLimit?: number;
+
+  @ApiPropertyOptional({ description: 'Configured monthly limit (USD); absent means unlimited' })
+  monthlyLimit?: number;
+
+  @ApiProperty({ description: 'Daily spend as a percentage of the daily limit (0 when unlimited)' })
+  dailyPercentage: number;
+
+  @ApiProperty({
+    description: 'Monthly spend as a percentage of the monthly limit (0 when unlimited)',
+  })
+  monthlyPercentage: number;
+
+  @ApiProperty({ enum: Object.values(BudgetStatus) })
+  status: BudgetStatus;
+
+  @ApiPropertyOptional({ description: 'Present when approaching a limit — names the dimension' })
+  warning?: string;
+}

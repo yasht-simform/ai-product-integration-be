@@ -61,12 +61,18 @@ async function bootstrap() {
     .setVersion('1.0')
     .addBearerAuth({ type: 'http', scheme: 'bearer', bearerFormat: 'JWT' }, 'access-token')
     .addTag('health', 'Health and readiness probes')
+    .addTag(
+      'openai',
+      'OpenAI chat completions, token counting, prompt templates, and circuit breaker health',
+    )
     .addTag('auth', 'Authentication and authorization')
     .addTag('users', 'User management')
     .addTag('ai-chat', 'AI chat completions')
     .addTag('embeddings', 'Text embeddings and vector similarity search')
     .addTag('rag', 'Retrieval-augmented generation')
     .addTag('moderation', 'Content moderation and safety')
+    .addTag('cost-management', 'Per-user cost budgets, analytics, and data retention')
+    .addTag('capstone', 'Demo dataset seeding and readiness checks proving all 4 phases together')
     .build();
 
   const document = SwaggerModule.createDocument(app, swaggerConfig);

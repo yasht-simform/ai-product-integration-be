@@ -1,0 +1,1502 @@
+[
+  {
+    "question": "What is the return window for CloudPulse subscriptions?",
+    "expectedAnswer": "30 days from the date of purchase",
+    "sourceDocument": "product-return-policy.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How long does it take for an approved refund to be processed?",
+    "expectedAnswer": "5-7 business days to the original payment method",
+    "sourceDocument": "product-return-policy.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How many days is workspace data retained after a subscription is canceled?",
+    "expectedAnswer": "90 days after cancellation before being permanently deleted",
+    "sourceDocument": "product-return-policy.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare how annual plan refunds work within the first 30 days versus after the 30-day window.",
+    "expectedAnswer": "Within 30 days, annual Pro and Enterprise plans are refundable in full. After 30 days, annual plans are refundable only on a prorated basis for the unused portion of the term, minus a 10% early-cancellation fee.",
+    "sourceDocument": "product-return-policy.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can I get a refund for a custom integration development fee 45 days after purchase?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "product-return-policy.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What is the minimum Node.js version required to get started with CloudPulse?",
+    "expectedAnswer": "Node.js version 18 or later (Node 20 LTS recommended)",
+    "sourceDocument": "getting-started-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How many workspaces can an account belong to on the Free plan?",
+    "expectedAnswer": "Up to 10 workspaces on the Free plan",
+    "sourceDocument": "getting-started-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What local port does the CloudPulse CLI use to receive the OAuth login callback?",
+    "expectedAnswer": "Port 8734",
+    "sourceDocument": "getting-started-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the default columns created by the kanban board template with the full list of available board templates.",
+    "expectedAnswer": "The kanban template creates four columns: Backlog, In Progress, In Review, and Done. The available templates are kanban, scrum, and blank.",
+    "sourceDocument": "getting-started-guide.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can the CloudPulse CLI be installed on Windows XP?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "getting-started-guide.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What is the base URL for the CloudPulse REST API?",
+    "expectedAnswer": "https://api.cloudpulse.io/v1",
+    "sourceDocument": "api-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What is the Pro plan's API rate limit in requests per minute?",
+    "expectedAnswer": "300 requests per minute",
+    "sourceDocument": "api-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What HTTP status code does the CloudPulse API return when a rate limit is exceeded?",
+    "expectedAnswer": "429 Too Many Requests",
+    "sourceDocument": "api-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the API rate limits and burst allowances across the Free, Pro, and Enterprise plans.",
+    "expectedAnswer": "Free is 60 requests per minute with a burst of 10; Pro is 300 requests per minute with a burst of 50; Enterprise is 2,000 requests per minute with a burst of 200.",
+    "sourceDocument": "api-reference.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What is the maximum file size the CloudPulse API accepts for a single task attachment?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "api-reference.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "How much does the Pro plan cost per user per month when billed monthly?",
+    "expectedAnswer": "$12 per user per month billed monthly ($10 per user per month billed annually)",
+    "sourceDocument": "pricing-plans.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How many boards are included in the Free plan?",
+    "expectedAnswer": "3 boards per workspace",
+    "sourceDocument": "pricing-plans.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What discount do verified nonprofits and educational institutions receive on CloudPulse plans?",
+    "expectedAnswer": "50% off Pro and Enterprise plans",
+    "sourceDocument": "pricing-plans.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the file storage included in the Free plan versus the Enterprise plan.",
+    "expectedAnswer": "The Free plan includes 1 GB of file storage, while the Enterprise plan includes unlimited file storage.",
+    "sourceDocument": "pricing-plans.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What is the exact monthly price for an Enterprise plan with exactly 12 seats?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "pricing-plans.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "How long does a CloudPulse password reset link remain valid?",
+    "expectedAnswer": "1 hour",
+    "sourceDocument": "troubleshooting-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "After how many consecutive delivery failures does CloudPulse automatically disable a webhook?",
+    "expectedAnswer": "10 consecutive delivery failures",
+    "sourceDocument": "troubleshooting-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How many days do deleted tasks remain in the workspace trash before being permanently deleted?",
+    "expectedAnswer": "30 days",
+    "sourceDocument": "troubleshooting-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the two reasons a CloudPulse workspace might be suspended and where to check which reason applies.",
+    "expectedAnswer": "A workspace is suspended either after a failed payment following 3 retry attempts over 7 days, or due to an active chargeback dispute. The specific reason can be checked in Settings -> Billing.",
+    "sourceDocument": "troubleshooting-faq.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Why does the CloudPulse mobile app crash when the phone is rotated?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "troubleshooting-faq.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What hashing algorithm and cost factor does CloudPulse use to store passwords?",
+    "expectedAnswer": "bcrypt with a cost factor of 12",
+    "sourceDocument": "security-best-practices.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What encryption standard does CloudPulse use for data at rest?",
+    "expectedAnswer": "AES-256",
+    "sourceDocument": "security-best-practices.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which HTTP header carries the webhook payload signature?",
+    "expectedAnswer": "X-CloudPulse-Signature, an HMAC-SHA256 signature",
+    "sourceDocument": "security-best-practices.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the permissions of the Admin, Member, and Viewer roles in a CloudPulse workspace.",
+    "expectedAnswer": "Admins can manage billing, invite/remove members, configure SSO, and delete the workspace. Members can create and edit boards and tasks but not access billing or security settings. Viewers have read-only access to boards and tasks.",
+    "sourceDocument": "security-best-practices.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does CloudPulse support quantum-resistant encryption algorithms?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "security-best-practices.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What is the default sync interval, in seconds, for the CloudPulse Sync Agent?",
+    "expectedAnswer": "300 seconds",
+    "sourceDocument": "deployment-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What is the minimum PostgreSQL version required by the CloudPulse Sync Agent?",
+    "expectedAnswer": "PostgreSQL 14+",
+    "sourceDocument": "deployment-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What does a SYNC_AUTH_ERROR status from the CloudPulse Sync Agent indicate?",
+    "expectedAnswer": "The configured API key has been revoked or lacks admin scope",
+    "sourceDocument": "deployment-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare deploying the CloudPulse Sync Agent via Docker versus AWS ECS.",
+    "expectedAnswer": "Docker deployment pulls the sync-agent image and runs it as a single container using an env file. AWS ECS deployment creates a task definition storing secrets in AWS Secrets Manager, with the desired count set to 1 since the agent isn't designed to run multiple concurrent replicas.",
+    "sourceDocument": "deployment-guide.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can the CloudPulse Sync Agent be deployed on Kubernetes?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "deployment-guide.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "How many days does a CloudPulse team invite link remain valid before it expires?",
+    "expectedAnswer": "7 days",
+    "sourceDocument": "team-management.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What is the maximum number of team members allowed on the Pro plan?",
+    "expectedAnswer": "50 team members",
+    "sourceDocument": "team-management.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which CloudPulse plan is required to enable single sign-on (SSO)?",
+    "expectedAnswer": "The Enterprise plan",
+    "sourceDocument": "team-management.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the Admin, Member, and Viewer roles described in the team management guide.",
+    "expectedAnswer": "Admin has full access including billing, member management, SSO configuration, and workspace deletion. Member can create, edit, and delete boards and tasks but cannot access billing or security settings. Viewer has read-only access to boards and tasks.",
+    "sourceDocument": "team-management.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can a Viewer role be granted temporary one-hour edit access to a board?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "team-management.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What new view was added to CloudPulse boards in version 3.4.0?",
+    "expectedAnswer": "A timeline view showing tasks on a Gantt-style horizontal calendar",
+    "sourceDocument": "changelog-2026.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What legacy API endpoint was removed as a breaking change in version 3.0.0?",
+    "expectedAnswer": "The legacy GET /v0/tasks endpoint",
+    "sourceDocument": "changelog-2026.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which integration launched in CloudPulse version 2.6.0?",
+    "expectedAnswer": "The Zapier integration",
+    "sourceDocument": "changelog-2026.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare Jira sync behavior in version 2.8.0 versus earlier versions.",
+    "expectedAnswer": "Version 2.8.0 made Jira sync two-way (CloudPulse and Jira both update each other). Prior to 2.8.0, sync was import-only, flowing from Jira into CloudPulse.",
+    "sourceDocument": "changelog-2026.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What new features were added in CloudPulse version 4.0.0?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "changelog-2026.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What Slack slash command creates a task directly from Slack?",
+    "expectedAnswer": "/cloudpulse create <title>",
+    "sourceDocument": "integrations-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How often does the Jira integration poll for changes to sync?",
+    "expectedAnswer": "On a 5-minute polling interval",
+    "sourceDocument": "integrations-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How many triggers did the Zapier integration launch with in version 2.6.0?",
+    "expectedAnswer": "15 triggers (and 10 actions)",
+    "sourceDocument": "integrations-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare what happens to previously-linked GitHub commits versus future syncing when you disconnect the GitHub integration.",
+    "expectedAnswer": "Disconnecting an integration immediately revokes its OAuth grant and stops all future syncing, but data already synced -- such as previously-linked GitHub commits -- remains linked and is not deleted.",
+    "sourceDocument": "integrations-guide.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does CloudPulse offer a native Microsoft Teams integration?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "integrations-guide.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What CLI command imports tasks from a CSV file into a new or existing CloudPulse board?",
+    "expectedAnswer": "cloudpulse import --file tasks.csv --board \"Name\"",
+    "sourceDocument": "migration-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What four columns does the CSV import command require?",
+    "expectedAnswer": "title, status, assignee, and dueDate",
+    "sourceDocument": "migration-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "When importing from Asana, how should a task marked complete be handled if it's still listed under an unrelated section?",
+    "expectedAnswer": "Its status should be set to Done based on the completion flag, regardless of which section name it's still listed under",
+    "sourceDocument": "migration-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the CSV import path and the Enterprise migration wizard in terms of who can use them and whether they provide ongoing sync.",
+    "expectedAnswer": "CSV import is available on every plan (Free, Pro, Enterprise) as a one-time, stateless conversion, while the migration wizard is offered only as part of Enterprise onboarding and connects directly to the source tool's API for a guided cutover; neither path provides a continuous two-way sync after the import completes.",
+    "sourceDocument": "migration-guide.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does CloudPulse's migration wizard support importing directly from Monday.com?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "migration-guide.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What is the default value of SYNC_BATCH_SIZE for the CloudPulse Sync Agent?",
+    "expectedAnswer": "100 records per API page",
+    "sourceDocument": "performance-tuning-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What is the maximum allowed value for SYNC_CONCURRENCY?",
+    "expectedAnswer": "16 — values above it are rejected at startup",
+    "sourceDocument": "performance-tuning-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "On what port does the Sync Agent expose its /health endpoint?",
+    "expectedAnswer": "Port 9090",
+    "sourceDocument": "performance-tuning-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How does tuning SYNC_BATCH_SIZE differ from tuning SYNC_CONCURRENCY, and which should be adjusted first for a 10,000+ task workspace?",
+    "expectedAnswer": "SYNC_BATCH_SIZE controls how many records are fetched per API page (default 100) and mainly reduces total round trips, while SYNC_CONCURRENCY controls how many batches run in parallel (default 4, max 16) and mainly hides network latency; the recommended order is to raise SYNC_BATCH_SIZE first, and only raise SYNC_CONCURRENCY afterward if sync cycles still run too long.",
+    "sourceDocument": "performance-tuning-guide.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What SYNC_CONCURRENCY value is recommended specifically for a multi-region Kubernetes deployment of the Sync Agent?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "performance-tuning-guide.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "At what time (UTC) are CloudPulse Enterprise's automated backups taken each day?",
+    "expectedAnswer": "02:00 UTC",
+    "sourceDocument": "backup-restore-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How long are CloudPulse's automated daily backups retained?",
+    "expectedAnswer": "35 days",
+    "sourceDocument": "backup-restore-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What CLI command produces a manual, on-demand export of a board's data?",
+    "expectedAnswer": "cloudpulse export --format json|csv",
+    "sourceDocument": "backup-restore-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare a support-ticket backup restore with a manual cloudpulse export in terms of when each should be used and how they're initiated.",
+    "expectedAnswer": "A backup restore is used to recover from an incident that already happened and must be requested through a CloudPulse support ticket with a target RTO of 4 hours, while a manual cloudpulse export is a self-service, on-demand snapshot you run yourself, typically as a safety net before a risky change, and is not retained by CloudPulse afterward.",
+    "sourceDocument": "backup-restore-guide.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can CloudPulse restore a workspace to an exact point in time mid-day, rather than to the nearest daily backup?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "backup-restore-guide.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What ACS URL should be entered into an identity provider when configuring SAML 2.0 SSO for CloudPulse?",
+    "expectedAnswer": "https://app.cloudpulse.io/sso/saml/callback",
+    "sourceDocument": "sso-configuration-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What Entity ID should be entered into an identity provider when configuring SAML 2.0 SSO for CloudPulse?",
+    "expectedAnswer": "https://app.cloudpulse.io/sso/saml/metadata",
+    "sourceDocument": "sso-configuration-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which CloudPulse role is required to configure SSO for a workspace?",
+    "expectedAnswer": "The admin role — SSO configuration is not exposed to member or viewer roles",
+    "sourceDocument": "sso-configuration-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How does CloudPulse's recommended SSO protocol differ between Okta/Azure AD and Google Workspace?",
+    "expectedAnswer": "Okta and Azure AD are configured using SAML 2.0, where the identity provider's metadata is uploaded to CloudPulse, while Google Workspace uses OIDC instead, configured with a Google Cloud Console OAuth client ID and secret, since Google Workspace supports OIDC natively with less manual field mapping.",
+    "sourceDocument": "sso-configuration-guide.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does CloudPulse support LDAP-based SSO for an on-premises Active Directory that isn't federated through Azure AD?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "sso-configuration-guide.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "In which version was the formula custom field type added to CloudPulse?",
+    "expectedAnswer": "v3.3.0",
+    "sourceDocument": "custom-fields-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What is the maximum number of custom fields allowed on a single CloudPulse board?",
+    "expectedAnswer": "20 custom fields per board, counting all types together",
+    "sourceDocument": "custom-fields-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What four arithmetic operators can a formula custom field use?",
+    "expectedAnswer": "Addition (+), subtraction (-), multiplication (*), and division (/)",
+    "sourceDocument": "custom-fields-guide.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How does a dropdown custom field differ from a formula custom field in terms of how its value is set?",
+    "expectedAnswer": "A dropdown field's value must be manually selected from a fixed, predefined list of options, while a formula field's value is never entered directly — it's automatically computed from other numeric fields on the same board using arithmetic operators.",
+    "sourceDocument": "custom-fields-guide.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can a formula field on one board reference a numeric custom field defined on a different board?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "custom-fields-guide.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What payment method, besides credit card, can Enterprise customers use if they are on an annual contract?",
+    "expectedAnswer": "ACH bank transfer",
+    "sourceDocument": "billing-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What currency are all CloudPulse invoices billed in?",
+    "expectedAnswer": "US dollars (USD) only",
+    "sourceDocument": "billing-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How many payment retry attempts does CloudPulse make before suspending a workspace for a failed payment?",
+    "expectedAnswer": "3 attempts over a 7-day window",
+    "sourceDocument": "billing-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare how upgrades and downgrades are prorated on a CloudPulse subscription.",
+    "expectedAnswer": "Upgrades take effect immediately with an immediate prorated charge for the price difference, while downgrades are scheduled to take effect at the start of the next billing cycle with no immediate refund for the current cycle's unused portion.",
+    "sourceDocument": "billing-faq.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does CloudPulse accept payment via cryptocurrency for any plan?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "billing-faq.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What bcrypt cost factor does CloudPulse use to hash passwords?",
+    "expectedAnswer": "12",
+    "sourceDocument": "security-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How long is a CloudPulse password reset link valid for?",
+    "expectedAnswer": "1 hour",
+    "sourceDocument": "security-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which SSO protocol was added to CloudPulse Enterprise in v3.1.0?",
+    "expectedAnswer": "SAML 2.0",
+    "sourceDocument": "security-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the availability timelines of OIDC and SAML 2.0 SSO on CloudPulse Enterprise.",
+    "expectedAnswer": "OIDC-based SSO has been available on Enterprise since the tier's introduction, while SAML 2.0 support was added later, in v3.1.0.",
+    "sourceDocument": "security-faq.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Is CloudPulse ISO 27001 certified?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "security-faq.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "How many of the latest browser versions does the CloudPulse web app officially support?",
+    "expectedAnswer": "The latest 2 versions of Chrome, Firefox, Safari, and Edge",
+    "sourceDocument": "technical-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "In which release was the legacy GET /v0/tasks endpoint removed?",
+    "expectedAnswer": "v3.0.0, released January 8, 2026",
+    "sourceDocument": "technical-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What local port does the CloudPulse CLI use to receive the OAuth login callback?",
+    "expectedAnswer": "Port 8734",
+    "sourceDocument": "technical-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the offline capability of the CloudPulse web app with that of CloudPulse Mobile.",
+    "expectedAnswer": "The web app has no offline mode at all and requires a constant connection, whereas CloudPulse Mobile (since v3.5.0) supports read-only offline board viewing with edits syncing automatically once reconnected.",
+    "sourceDocument": "technical-faq.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does the CloudPulse web app support a dark mode theme?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "technical-faq.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "How long do CloudPulse workspace invite links stay valid before expiring?",
+    "expectedAnswer": "7 days",
+    "sourceDocument": "account-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which workspace role is required to transfer workspace ownership?",
+    "expectedAnswer": "admin",
+    "sourceDocument": "account-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How long is workspace data retained after subscription cancellation before permanent deletion?",
+    "expectedAnswer": "90 days",
+    "sourceDocument": "account-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the permissions of the admin role and the viewer role in a CloudPulse workspace.",
+    "expectedAnswer": "Admins can manage billing, invite or remove members, configure SSO, delete the workspace, and transfer ownership, while viewers have read-only access to boards and tasks and cannot make any changes.",
+    "sourceDocument": "account-faq.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can I merge two separate CloudPulse accounts into a single account?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "account-faq.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What is the minimum iOS version required to run CloudPulse Mobile?",
+    "expectedAnswer": "iOS 14",
+    "sourceDocument": "mobile-app-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What biometric login method does CloudPulse Mobile support on Android?",
+    "expectedAnswer": "Fingerprint authentication",
+    "sourceDocument": "mobile-app-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "When was CloudPulse Mobile v1.0 released?",
+    "expectedAnswer": "July 9, 2026, as part of v3.5.0",
+    "sourceDocument": "mobile-app-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare CloudPulse Mobile's offline board viewing with how it handles edits attempted while offline.",
+    "expectedAnswer": "Offline viewing is read-only; the app does not queue edits made offline, since editing controls are disabled until connectivity is detected again, so there is no offline-edit-then-sync-later queue.",
+    "sourceDocument": "mobile-app-faq.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does CloudPulse Mobile offer a tablet-optimized layout for iPad?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "mobile-app-faq.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What three channels does CloudPulse use to deliver notifications?",
+    "expectedAnswer": "Email, in-app, and Slack",
+    "sourceDocument": "notifications-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "In which release did Slack notifications gain support for threaded replies?",
+    "expectedAnswer": "v3.1.0",
+    "sourceDocument": "notifications-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What two digest email cadence options can be enabled per board?",
+    "expectedAnswer": "Daily or weekly",
+    "sourceDocument": "notifications-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare real-time notifications with digest emails as notification options for a board.",
+    "expectedAnswer": "Real-time notifications (email, in-app, Slack) alert on each event as it happens, while a digest email is a separate, optional daily or weekly summary that is off by default and can be enabled independently of real-time channels.",
+    "sourceDocument": "notifications-faq.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can I set a custom notification sound for CloudPulse desktop alerts?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "notifications-faq.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What two file formats can CloudPulse workspace data be exported in?",
+    "expectedAnswer": "CSV and JSON",
+    "sourceDocument": "data-export-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Within how many days is a GDPR data portability request fulfilled?",
+    "expectedAnswer": "30 days",
+    "sourceDocument": "data-export-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which workspace role is required to perform a full workspace export?",
+    "expectedAnswer": "admin",
+    "sourceDocument": "data-export-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare a self-service Settings → Data Export with a GDPR data portability request.",
+    "expectedAnswer": "The self-service export via Settings → Data Export or the CLI is immediate and available to admins with no waiting period, while a GDPR portability request is submitted via legal@cloudpulse.io and is guaranteed to be fulfilled within 30 days.",
+    "sourceDocument": "data-export-faq.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can CloudPulse workspace data be exported in XML format?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "data-export-faq.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What prefix do CloudPulse sandbox API keys use?",
+    "expectedAnswer": "cp_test_",
+    "sourceDocument": "api-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which response header tells you how many API requests remain before hitting the rate limit?",
+    "expectedAnswer": "X-RateLimit-Remaining",
+    "sourceDocument": "api-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What HTTP status code does the CloudPulse API return when a rate limit is exceeded?",
+    "expectedAnswer": "429 Too Many Requests",
+    "sourceDocument": "api-faq.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the API rate limits of the Free plan and the Enterprise plan.",
+    "expectedAnswer": "The Free plan is limited to 60 requests per minute, while Enterprise is limited to 2,000 requests per minute — over 33 times higher than Free.",
+    "sourceDocument": "api-faq.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does the CloudPulse API support GraphQL queries?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "api-faq.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What database serves as CloudPulse's system of record?",
+    "expectedAnswer": "PostgreSQL 15.",
+    "sourceDocument": "architecture-overview.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which API gateway sits in front of CloudPulse's microservices?",
+    "expectedAnswer": "Kong.",
+    "sourceDocument": "architecture-overview.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What AWS compute service hosts CloudPulse's microservices?",
+    "expectedAnswer": "AWS ECS Fargate.",
+    "sourceDocument": "architecture-overview.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the roles of Redis and Kafka in CloudPulse's architecture.",
+    "expectedAnswer": "Redis is used for caching frequently read data and for backing the per-API-key rate-limit counters, while Kafka is the event bus that connects the microservices, carrying task/board mutation events to the Notification, Search, and Sync services.",
+    "sourceDocument": "architecture-overview.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What programming language is CloudPulse's backend written in?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "architecture-overview.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What entity does a Board belong to in CloudPulse's data model?",
+    "expectedAnswer": "A Workspace.",
+    "sourceDocument": "data-model.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What are the two child entity types that belong to a Task?",
+    "expectedAnswer": "Comment and Attachment.",
+    "sourceDocument": "data-model.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which Task field holds a free-form key-value map for workspace-defined data?",
+    "expectedAnswer": "customFields.",
+    "sourceDocument": "data-model.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the labels field and the customFields field on a CloudPulse Task.",
+    "expectedAnswer": "labels is a flat array of free-text tags used for categorization and filtering, while customFields is a structured key-value object for workspace-specific structured data, and is only available on Pro and Enterprise plans.",
+    "sourceDocument": "data-model.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What is the maximum number of custom fields allowed per task?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "data-model.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What HTTP header carries the signature on a CloudPulse webhook delivery?",
+    "expectedAnswer": "X-CloudPulse-Signature.",
+    "sourceDocument": "webhooks-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How many consecutive delivery failures cause a CloudPulse webhook to be automatically disabled?",
+    "expectedAnswer": "10 consecutive delivery failures.",
+    "sourceDocument": "webhooks-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "In which version was the board.created webhook event added?",
+    "expectedAnswer": "v2.8.0.",
+    "sourceDocument": "webhooks-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the per-event retry policy and the auto-disable rule for CloudPulse webhooks.",
+    "expectedAnswer": "A single event delivery is retried with exponential backoff for up to 5 attempts over roughly 30 minutes, while separately, the webhook subscription itself is automatically disabled if 10 consecutive event deliveries in a row fail.",
+    "sourceDocument": "webhooks-reference.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What is the maximum payload size allowed for a CloudPulse webhook delivery?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "webhooks-reference.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What npm package do you install for the CloudPulse Node.js SDK?",
+    "expectedAnswer": "@cloudpulse/sdk.",
+    "sourceDocument": "sdk-reference-js.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What class do you instantiate to create a CloudPulse Node.js SDK client?",
+    "expectedAnswer": "CloudPulseClient.",
+    "sourceDocument": "sdk-reference-js.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What pagination style does the CloudPulse Node.js SDK use for list methods like tasks.list()?",
+    "expectedAnswer": "Cursor-based pagination, using a meta.cursor value and a meta.hasMore flag.",
+    "sourceDocument": "sdk-reference-js.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare client.tasks.create() and client.tasks.list() in the CloudPulse Node.js SDK.",
+    "expectedAnswer": "client.tasks.create() creates a single new task from a params object and returns that task, while client.tasks.list() returns a paginated collection of existing tasks filtered by criteria like boardId, using cursor-based pagination.",
+    "sourceDocument": "sdk-reference-js.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does the CloudPulse Node.js SDK automatically retry requests that hit the rate limit?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "sdk-reference-js.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What pip package installs the CloudPulse Python SDK?",
+    "expectedAnswer": "cloudpulse-sdk.",
+    "sourceDocument": "sdk-reference-python.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How is the API key passed when constructing the CloudPulse Python SDK client?",
+    "expectedAnswer": "As the api_key keyword argument, e.g. CloudPulseClient(api_key=\"cp_live_...\").",
+    "sourceDocument": "sdk-reference-python.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What naming convention do CloudPulse Python SDK method arguments use?",
+    "expectedAnswer": "snake_case.",
+    "sourceDocument": "sdk-reference-python.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare how client.tasks.create() is called in the CloudPulse Python SDK versus the Node.js SDK.",
+    "expectedAnswer": "The Python SDK takes snake_case keyword arguments directly, e.g. client.tasks.create(board_id=..., due_date=...), while the Node.js SDK takes a single camelCase object argument, e.g. client.tasks.create({ boardId, dueDate }); both translate to and from the REST API's camelCase JSON on the wire.",
+    "sourceDocument": "sdk-reference-python.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does the CloudPulse Python SDK support async/await syntax?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "sdk-reference-python.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What local port does `cloudpulse login` use for its temporary OAuth callback server?",
+    "expectedAnswer": "Port 8734.",
+    "sourceDocument": "cli-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What npm package provides the CloudPulse CLI?",
+    "expectedAnswer": "@cloudpulse/cli.",
+    "sourceDocument": "cli-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What output formats does `cloudpulse export` support?",
+    "expectedAnswer": "JSON and CSV.",
+    "sourceDocument": "cli-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare `cloudpulse config set` and `cloudpulse config get`.",
+    "expectedAnswer": "`cloudpulse config set <key> <value>` writes a key-value pair to the local .cloudpulse.yml file, while `cloudpulse config get <key>` reads back the current value of a given key from that same file.",
+    "sourceDocument": "cli-reference.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What CLI command deletes a board?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "cli-reference.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "Which CloudPulse role is required to configure SSO?",
+    "expectedAnswer": "Admin.",
+    "sourceDocument": "permissions-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Can a viewer add comments in CloudPulse?",
+    "expectedAnswer": "Yes, viewers can add comments even though they otherwise have read-only access.",
+    "sourceDocument": "permissions-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which two roles can delete boards in CloudPulse?",
+    "expectedAnswer": "Admin and member.",
+    "sourceDocument": "permissions-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the permissions of the member and viewer roles in CloudPulse.",
+    "expectedAnswer": "A member can create, edit, and delete both boards and tasks, while a viewer can only view boards and tasks and add comments, with no ability to create, edit, or delete them; neither role has admin-only capabilities like billing or SSO.",
+    "sourceDocument": "permissions-reference.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can a workspace create a custom role with a subset of admin permissions?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "permissions-reference.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What query parameter specifies the search text on GET /v1/search?",
+    "expectedAnswer": "The q parameter.",
+    "sourceDocument": "search-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What values can the type filter accept on the CloudPulse search endpoint?",
+    "expectedAnswer": "task or comment.",
+    "sourceDocument": "search-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "In which version was the CloudPulse full-text search endpoint added?",
+    "expectedAnswer": "v3.5.0.",
+    "sourceDocument": "search-reference.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the label: and assignee: filters in CloudPulse search queries.",
+    "expectedAnswer": "label:<name> restricts results to content associated with tasks carrying a given label, while assignee:<email> restricts results to tasks assigned to a given user; both are inline filters within the q parameter and can be combined with each other and with free-text keywords.",
+    "sourceDocument": "search-reference.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does the CloudPulse search endpoint support fuzzy or typo-tolerant matching?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "search-reference.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What are the three board templates available when creating a new CloudPulse board?",
+    "expectedAnswer": "kanban, scrum, and blank",
+    "sourceDocument": "tutorial-first-board.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What local port does the CLI use to receive the OAuth callback during `cloudpulse login`?",
+    "expectedAnswer": "Port 8734",
+    "sourceDocument": "tutorial-first-board.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What are the four default columns created by the kanban board template?",
+    "expectedAnswer": "Backlog, In Progress, In Review, and Done",
+    "sourceDocument": "tutorial-first-board.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare adding a task via the CLI with adding a task via the web UI in this tutorial.",
+    "expectedAnswer": "The CLI creates a task with `cloudpulse task create --board <name> --title <title> --assignee <email>`, placing it directly in Backlog, while the web UI adds a task by clicking \"+ Add Task\" in the Backlog column and typing a title, with assignee/due date/labels set afterward by opening the task's detail panel.",
+    "sourceDocument": "tutorial-first-board.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What browser extensions does this tutorial recommend installing before creating your first board?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "tutorial-first-board.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "How long does a CloudPulse team invite link remain valid before it expires?",
+    "expectedAnswer": "7 days",
+    "sourceDocument": "tutorial-inviting-team.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which role should be assigned to someone who needs read-only visibility into a workspace?",
+    "expectedAnswer": "The viewer role",
+    "sourceDocument": "tutorial-inviting-team.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What is the maximum number of members allowed in a Free plan workspace, per this tutorial?",
+    "expectedAnswer": "5 members",
+    "sourceDocument": "tutorial-inviting-team.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the member role and the viewer role as described in this tutorial.",
+    "expectedAnswer": "A member can create and edit boards, tasks, and comments but cannot change workspace-level settings like billing; a viewer has read-only access and can view boards/tasks and leave comments, but cannot create or edit tasks.",
+    "sourceDocument": "tutorial-inviting-team.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "How do you configure single sign-on (SSO) when inviting team members in this tutorial?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "tutorial-inviting-team.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What are the three action types supported by a CloudPulse automation rule?",
+    "expectedAnswer": "Assign, move column, and notify",
+    "sourceDocument": "tutorial-automation-basics.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How many active automation rules can a Pro plan workspace have at once, according to this tutorial?",
+    "expectedAnswer": "Up to 20 active automation rules",
+    "sourceDocument": "tutorial-automation-basics.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Where do you navigate to create a new automation rule?",
+    "expectedAnswer": "Settings → Automation → New Rule",
+    "sourceDocument": "tutorial-automation-basics.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the Pro and Enterprise plans' automation rule limits as discussed in this tutorial.",
+    "expectedAnswer": "Pro plan workspaces can have up to 20 active automation rules, while Enterprise workspaces have no limit at all and don't display a rule count on the Automation page.",
+    "sourceDocument": "tutorial-automation-basics.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can an automation rule trigger a Zapier webhook directly, according to this tutorial?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "tutorial-automation-basics.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What is the maximum number of custom fields allowed per board?",
+    "expectedAnswer": "20 custom fields",
+    "sourceDocument": "tutorial-custom-fields.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which four arithmetic operators are supported in a CloudPulse formula field?",
+    "expectedAnswer": "+, -, *, and /",
+    "sourceDocument": "tutorial-custom-fields.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What are the five custom field types CloudPulse supports?",
+    "expectedAnswer": "Text, number, dropdown, date, and formula",
+    "sourceDocument": "tutorial-custom-fields.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare the text field type and the dropdown field type as covered in this tutorial.",
+    "expectedAnswer": "A text field accepts any free-form string, suited to information like client names that doesn't fit fixed options, while a dropdown field constrains every task to one of a predefined set of values, suited to consistent filtering and reporting such as a Low/Medium/High Priority Tier.",
+    "sourceDocument": "tutorial-custom-fields.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can a custom field's value be automatically synced to a linked Jira ticket, per this tutorial?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "tutorial-custom-fields.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What slash command lets you create a CloudPulse task directly from Slack?",
+    "expectedAnswer": "`/cloudpulse create <title>`",
+    "sourceDocument": "tutorial-slack-integration.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How does CloudPulse avoid flooding a Slack channel with a new top-level message for every task status change?",
+    "expectedAnswer": "It posts status changes as threaded replies underneath the original task message instead of new top-level messages.",
+    "sourceDocument": "tutorial-slack-integration.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What permissions does the CloudPulse Slack app request during authorization?",
+    "expectedAnswer": "Permission to post messages and to register the /cloudpulse slash command",
+    "sourceDocument": "tutorial-slack-integration.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare creating a task with the /cloudpulse create slash command versus a task created via CLI/API on a board with Slack notifications enabled, per this tutorial.",
+    "expectedAnswer": "The /cloudpulse create slash command creates the task directly from Slack and posts a confirmation with a link back to CloudPulse, while a task created via CLI, API, or web UI on a Slack-connected board automatically posts its status changes into the channel too, with no extra per-task setup needed.",
+    "sourceDocument": "tutorial-slack-integration.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can CloudPulse post messages to a private Slack channel the app hasn't been invited to, according to this tutorial?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "tutorial-slack-integration.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What bracketed format does CloudPulse look for in a commit message to link it to a task?",
+    "expectedAnswer": "A bracketed task ID such as [CP-142]",
+    "sourceDocument": "tutorial-github-integration.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What two installation scope options are offered when authorizing the CloudPulse GitHub App?",
+    "expectedAnswer": "Installing on all repositories in the organization, or only selected repositories",
+    "sourceDocument": "tutorial-github-integration.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Can a single commit be linked to more than one task in CloudPulse?",
+    "expectedAnswer": "Yes, by including multiple bracketed task IDs in the same commit message",
+    "sourceDocument": "tutorial-github-integration.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare installing the CloudPulse GitHub App on all repositories versus selected repositories, as covered in this tutorial.",
+    "expectedAnswer": "Installing on all repositories connects every repo in the organization at once, while selected repositories limits the connection to only the chosen repos; the tutorial recommends starting with selected repositories since more can be added later from the same screen.",
+    "sourceDocument": "tutorial-github-integration.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does the GitHub integration automatically close a linked task when its pull request is merged, per this tutorial?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "tutorial-github-integration.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What is the base URL for the CloudPulse REST API?",
+    "expectedAnswer": "https://api.cloudpulse.io/v1",
+    "sourceDocument": "tutorial-api-quickstart.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What prefix do CloudPulse sandbox API keys use?",
+    "expectedAnswer": "cp_test_",
+    "sourceDocument": "tutorial-api-quickstart.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What npm package provides the CloudPulse Node.js SDK?",
+    "expectedAnswer": "@cloudpulse/sdk",
+    "sourceDocument": "tutorial-api-quickstart.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare creating a task with curl versus with the Node.js SDK in this tutorial.",
+    "expectedAnswer": "The curl request requires manually setting the Authorization Bearer header, Content-Type, and JSON body against POST /tasks, while the Node.js SDK's client.tasks.create() method handles the Authorization header, JSON serialization, and base URL automatically once the client is instantiated with an API key.",
+    "sourceDocument": "tutorial-api-quickstart.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What GraphQL query syntax does the CloudPulse API support for creating tasks, per this tutorial?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "tutorial-api-quickstart.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "How many triggers does CloudPulse's Zapier app expose?",
+    "expectedAnswer": "15 triggers",
+    "sourceDocument": "tutorial-zapier-recipes.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Which CloudPulse trigger does this tutorial use to start its example Zap?",
+    "expectedAnswer": "The \"New Task Created\" trigger",
+    "sourceDocument": "tutorial-zapier-recipes.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What Slack action does this tutorial's example Zap use?",
+    "expectedAnswer": "The \"Send Channel Message\" action",
+    "sourceDocument": "tutorial-zapier-recipes.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare leaving the board field blank versus narrowing the New Task Created trigger to a specific board, as described in this tutorial.",
+    "expectedAnswer": "Leaving the board field blank makes the trigger fire for new tasks across every board in the workspace, while selecting a specific board narrows the trigger to only that board, which is useful once you have multiple Zaps each watching something different.",
+    "sourceDocument": "tutorial-zapier-recipes.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can a single Zap trigger actions in more than three different apps simultaneously, per this tutorial?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "tutorial-zapier-recipes.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "In which CloudPulse version were Timeline view and bulk task editing added?",
+    "expectedAnswer": "v3.4.0",
+    "sourceDocument": "tutorial-reporting-dashboard.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What is the maximum number of tasks that can be selected at once for bulk editing?",
+    "expectedAnswer": "100 tasks",
+    "sourceDocument": "tutorial-reporting-dashboard.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What are the three task properties that can be changed via bulk editing in this tutorial?",
+    "expectedAnswer": "Assignee, status, and due date",
+    "sourceDocument": "tutorial-reporting-dashboard.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare selecting tasks one by one versus using the Shift-click method described in this tutorial.",
+    "expectedAnswer": "Clicking individual checkboxes selects tasks one at a time, while clicking the first task's checkbox and then Shift-clicking a task further down selects every task in between in one action, up to the 100-task cap.",
+    "sourceDocument": "tutorial-reporting-dashboard.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Can Timeline view display tasks from multiple boards at the same time, according to this tutorial?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "tutorial-reporting-dashboard.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What header does CloudPulse use to sign webhook payloads?",
+    "expectedAnswer": "The X-CloudPulse-Signature header",
+    "sourceDocument": "tutorial-webhooks-setup.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "After how many consecutive delivery failures does CloudPulse automatically disable a webhook?",
+    "expectedAnswer": "10 consecutive delivery failures",
+    "sourceDocument": "tutorial-webhooks-setup.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What are the six webhook events CloudPulse supports?",
+    "expectedAnswer": "task.created, task.updated, task.completed, task.deleted, board.created, and comment.created",
+    "sourceDocument": "tutorial-webhooks-setup.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "Compare using the raw request body versus the parsed JSON body when verifying a webhook's signature, as described in this tutorial.",
+    "expectedAnswer": "Signature verification must run against the raw, unparsed request body bytes (captured before JSON parsing) because HMAC-SHA256 is computed over CloudPulse's exact raw bytes, whereas the parsed JSON body is only used afterward to read the event type and data once the signature is already confirmed valid.",
+    "sourceDocument": "tutorial-webhooks-setup.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Does CloudPulse retry a failed webhook delivery with exponential backoff before disabling it, per this tutorial?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "tutorial-webhooks-setup.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What version of CloudPulse was released in January 2026, and on what date?",
+    "expectedAnswer": "Version 3.0.0, released on 2026-01-08.",
+    "sourceDocument": "changelog-2026-01.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What happened to the legacy GET /v0/tasks endpoint in CloudPulse v3.0.0?",
+    "expectedAnswer": "It was permanently removed; all integrations must now use GET /v1/tasks instead.",
+    "sourceDocument": "changelog-2026-01.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What new self-hosted component did CloudPulse introduce in v3.0.0 for Enterprise compliance use cases, and how can it be deployed?",
+    "expectedAnswer": "The self-hosted Sync Agent, deployable via Docker or on AWS ECS.",
+    "sourceDocument": "changelog-2026-01.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What navigation change and what compliance-related feature did CloudPulse v3.0.0 ship together?",
+    "expectedAnswer": "v3.0.0 redesigned the workspace navigation and board sidebar, and separately added a new Enterprise audit log supporting CSV export and SIEM webhook streaming.",
+    "sourceDocument": "changelog-2026-01.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Did CloudPulse v3.0.0 introduce any changes to subscription pricing or billing plans?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "changelog-2026-01.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "How does the Slack integration's behavior change in CloudPulse v3.1.0 when a task's status changes?",
+    "expectedAnswer": "Task status changes now post as threaded replies under the original notification message instead of creating new top-level messages.",
+    "sourceDocument": "changelog-2026-02.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What SSO protocol did CloudPulse v3.1.0 add support for on Enterprise plans, in addition to the existing OIDC support?",
+    "expectedAnswer": "SAML 2.0 SSO.",
+    "sourceDocument": "changelog-2026-02.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What change did CloudPulse v3.1.0 make regarding the X-RateLimit-Remaining response header?",
+    "expectedAnswer": "It is now included on every API response, not just on 429 (rate-limited) responses.",
+    "sourceDocument": "changelog-2026-02.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What SSO capability and what API rate-limit improvement did CloudPulse ship together in v3.1.0?",
+    "expectedAnswer": "v3.1.0 added SAML 2.0 SSO support for Enterprise plans (alongside existing OIDC), and also made the X-RateLimit-Remaining header appear on every API response instead of only on 429s.",
+    "sourceDocument": "changelog-2026-02.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "Did CloudPulse v3.1.0 add support for two-factor authentication via SMS?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "changelog-2026-02.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What two new flags did the `cloudpulse task create` CLI command gain in v3.2.0?",
+    "expectedAnswer": "--due-date and --labels.",
+    "sourceDocument": "changelog-2026-03.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What prefix do CloudPulse's new sandbox API keys use, introduced in v3.2.0?",
+    "expectedAnswer": "The cp_test_ prefix.",
+    "sourceDocument": "changelog-2026-03.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What CLI login bug, identified by which error code, did CloudPulse v3.2.0 fix?",
+    "expectedAnswer": "It fixed a CLI login timeout, shown as ERR_AUTH_TIMEOUT, which primarily affected users on restrictive corporate networks.",
+    "sourceDocument": "changelog-2026-03.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What CLI authentication bug and what pagination bug did CloudPulse v3.2.0 both fix?",
+    "expectedAnswer": "v3.2.0 fixed a CLI login timeout (ERR_AUTH_TIMEOUT) affecting users on restrictive corporate networks, and separately fixed pagination's meta.hasMore field incorrectly returning true on the last page of results.",
+    "sourceDocument": "changelog-2026-03.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What new mobile app features were introduced in CloudPulse v3.2.0?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "changelog-2026-03.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What CSV export bug was fixed in CloudPulse v3.2.1?",
+    "expectedAnswer": "CSV exports were silently truncating task descriptions longer than 5,000 characters; descriptions of any length are now exported in full.",
+    "sourceDocument": "changelog-2026-04.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What webhook event was affected by a duplicate-delivery bug fixed in v3.2.1, and under what condition did it occur?",
+    "expectedAnswer": "The board.created event could be delivered more than once for the same board under high concurrency, such as during a bulk import.",
+    "sourceDocument": "changelog-2026-04.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What type of release was CloudPulse v3.2.1, and on what date did it ship?",
+    "expectedAnswer": "A patch release, shipped on 2026-04-14.",
+    "sourceDocument": "changelog-2026-04.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What CSV export issue and what webhook delivery issue did CloudPulse v3.2.1 both resolve?",
+    "expectedAnswer": "v3.2.1 fixed CSV exports truncating task descriptions longer than 5,000 characters, and separately fixed duplicate webhook deliveries for board.created events occurring under high concurrency.",
+    "sourceDocument": "changelog-2026-04.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What new features were added to CloudPulse in v3.2.1?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "changelog-2026-04.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What new custom field type did CloudPulse add in v3.3.0?",
+    "expectedAnswer": "A \"formula\" type, which computes its value automatically from other fields on the same task.",
+    "sourceDocument": "changelog-2026-05.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What new filter was added to the GET /tasks API endpoint in v3.3.0?",
+    "expectedAnswer": "A dueBefore filter, which returns only tasks due before a given ISO 8601 date.",
+    "sourceDocument": "changelog-2026-05.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "By roughly how much did v3.3.0 reduce board load time for boards with 1,000+ tasks, and how was this achieved?",
+    "expectedAnswer": "Roughly 40%, achieved through virtualized rendering.",
+    "sourceDocument": "changelog-2026-05.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What new formula custom field capability did v3.3.0 add, and what permissions bug did it fix in the same release?",
+    "expectedAnswer": "v3.3.0 added a formula custom field type for computed values, and separately fixed a bug where removing a team member did not revoke their access to restricted boards.",
+    "sourceDocument": "changelog-2026-05.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What SSO protocol changes were introduced in CloudPulse v3.3.0?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "changelog-2026-05.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What new view was added to CloudPulse boards in version 3.4.0?",
+    "expectedAnswer": "A timeline view showing tasks on a Gantt-style horizontal calendar",
+    "sourceDocument": "changelog-2026-06.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "How many tasks can be selected at once with v3.4.0's bulk task editing feature?",
+    "expectedAnswer": "Up to 100 tasks.",
+    "sourceDocument": "changelog-2026-06.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What Enterprise user provisioning standard did CloudPulse add support for in v3.4.0?",
+    "expectedAnswer": "SCIM 2.0 user provisioning.",
+    "sourceDocument": "changelog-2026-06.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What webhook duplication bug and what timezone bug did CloudPulse v3.4.0 both fix?",
+    "expectedAnswer": "v3.4.0 fixed webhook retries that could deliver duplicate task.completed events, and separately fixed incorrect timezone handling for due dates near daylight saving transitions.",
+    "sourceDocument": "changelog-2026-06.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What data residency options for Enterprise customers were introduced in CloudPulse v3.4.0?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "changelog-2026-06.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What platforms does CloudPulse Mobile v1.0, released in v3.5.0, support?",
+    "expectedAnswer": "iOS 14 and later, and Android 10 and later.",
+    "sourceDocument": "changelog-2026-07.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What new API endpoint did v3.5.0 introduce for full-text search, and what filter prefixes does it support?",
+    "expectedAnswer": "GET /v1/search, which searches task titles, descriptions, and comments, and supports label: and assignee: filter prefixes in the query string.",
+    "sourceDocument": "changelog-2026-07.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "By roughly how much did v3.5.0 reduce dashboard load time, and how?",
+    "expectedAnswer": "Roughly 25%, achieved through response caching.",
+    "sourceDocument": "changelog-2026-07.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What mobile app launch and what search capability did CloudPulse ship together in v3.5.0?",
+    "expectedAnswer": "v3.5.0 launched CloudPulse Mobile v1.0 for iOS 14+ and Android 10+ with push notifications, offline board viewing, and biometric login, and also introduced the GET /v1/search full-text search endpoint covering task titles, descriptions, and comments.",
+    "sourceDocument": "changelog-2026-07.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What data residency regions were introduced for Enterprise customers in CloudPulse v3.5.0?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "changelog-2026-07.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What search bug did CloudPulse fix in v3.5.1?",
+    "expectedAnswer": "The search endpoint was returning duplicate results when a task matched multiple labels; results are now correctly de-duplicated by task.",
+    "sourceDocument": "changelog-2026-08.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What SSO bug affecting Azure AD did v3.5.1 fix, and under what condition did it occur?",
+    "expectedAnswer": "It fixed a login loop that occurred for Azure AD SAML SSO users when their group claims exceeded 200 entries.",
+    "sourceDocument": "changelog-2026-08.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What type of release was CloudPulse v3.5.1, and on what date did it ship?",
+    "expectedAnswer": "A patch release, shipped on 2026-08-06.",
+    "sourceDocument": "changelog-2026-08.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What duplicate search-results bug and what Azure AD login bug did CloudPulse v3.5.1 both fix?",
+    "expectedAnswer": "v3.5.1 fixed the search endpoint returning duplicate results when a task matched multiple labels, and separately fixed an SSO login loop for Azure AD users whose group claims exceeded 200 entries.",
+    "sourceDocument": "changelog-2026-08.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What new features did CloudPulse add in v3.5.1?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "changelog-2026-08.md",
+    "complexity": "edge-case"
+  },
+  {
+    "question": "What data residency regions can Enterprise customers choose between in CloudPulse v3.6.0?",
+    "expectedAnswer": "A US hosting region or an EU hosting region.",
+    "sourceDocument": "changelog-2026-09.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What backup capability did v3.6.0 introduce for Enterprise customers, including its retention period?",
+    "expectedAnswer": "Automated daily PostgreSQL backups with 35-day retention, restorable via a support ticket.",
+    "sourceDocument": "changelog-2026-09.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "By roughly how much did v3.6.0 reduce automation rule evaluation latency?",
+    "expectedAnswer": "Roughly 30%.",
+    "sourceDocument": "changelog-2026-09.md",
+    "complexity": "simple"
+  },
+  {
+    "question": "What data residency option and what backup capability did CloudPulse v3.6.0 introduce together for Enterprise customers?",
+    "expectedAnswer": "v3.6.0 added a data residency option letting Enterprise customers choose US or EU hosting, and also introduced automated daily PostgreSQL backups with 35-day retention, restorable via a support ticket.",
+    "sourceDocument": "changelog-2026-09.md",
+    "complexity": "multi-step"
+  },
+  {
+    "question": "What mobile app improvements were included in CloudPulse v3.6.0?",
+    "expectedAnswer": "I don't have enough information to answer that based on the available documentation.",
+    "sourceDocument": "changelog-2026-09.md",
+    "complexity": "edge-case"
+  }
+]
